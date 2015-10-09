@@ -1,0 +1,6 @@
+development:
+  clients:
+    default:
+      database: linguita_development
+      hosts:
+        - localhost:27017
