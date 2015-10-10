@@ -8,4 +8,5 @@ gem 'omniauth-google-oauth2', github: 'zquestz/omniauth-google-oauth2', branch: 
 
 group :test do
 	gem 'minitest', require: "minitest/autorun"	
+	gem "rake"
 end
