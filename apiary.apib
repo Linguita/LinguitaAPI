@@ -1,0 +1,25 @@
+FORMAT: 1A
+HOST: http://www.linguita.io
+
+# Linguita
+
+Linguita is a simple API allowing language learners to get language partners to practice with them.
+
+## Authentication [/auth/{provider}/callback]
+
+### Send the provider code to obtain a token of the app [POST]
+
++ Request (application/json)
+
+        {
+            "code": "eb693ec8252cd630102fd0d0fb7c3485",
+            "redirect_uri":"/"
+        }
+
++ Response 200 (application/json)
+
+        {
+            "authentication_email":"carlos.sadhu@gmail.com",
+            "authentication_token":"eb693ec8252cd630102fd0d0fb7c3485"
+        }
+
