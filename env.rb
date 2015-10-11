@@ -1,8 +1,10 @@
 require 'bundler'
 Bundler.require
 
-
+require "sinatra/reloader" if development?
 Mongoid.load!("./mongoid.yml")
+
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE
 
 use Rack::Session::Cookie, :secret => 'change_me'
 
